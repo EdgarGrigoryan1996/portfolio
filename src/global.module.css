@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: cursive;
+}
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+section{
+    max-width: 100%;
+    overflow: hidden;
+    padding: 20px 9%;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 2rem 0;
+    overflow-x: hidden;
+}
+
+.btnBlock{
+    margin-top: 30px;
+}
+.textCenter{
+    text-align: center;
+}
+.animatedText{
+    animation: logoAnimated infinite 4s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 0.4s ease;
+}
+
+/* Keyframes */
+
+@keyframes logoAnimated {
+    0% {
+        text-shadow: 0 0 0.2rem var(--main-color);
+    }
+
+    50% {
+        text-shadow: 0 0 2rem var(--main-color);
+    }
+
+    100% {
+        text-shadow: 0 0 0.2rem var(--main-color);
+    }
+}

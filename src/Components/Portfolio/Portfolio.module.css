@@ -1,0 +1,128 @@
+.portfolio{
+    min-height: 100vh;
+}
+.portfolio h2{
+    font-size: 4.6rem;
+    text-align: center;
+    visibility: hidden;
+}
+.portfolio .portfolioTitleShow{
+    visibility: visible;
+}
+.portfolio h2 span{
+    color: var(--main-color);
+}
+.projects{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.project{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    margin-top: 50px;
+    overflow: hidden;
+    display: flex;
+    visibility: hidden;
+    flex-grow: 0;
+    flex-basis: 31%;
+}
+.projectShow{
+    visibility: visible;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.project:hover .projectLayer{
+    transform: translateY(0);
+}
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.project img{
+    width: 100%;
+    height: 300px;
+    transition: .5s ease;
+}
+.projectLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,.1), #134d64);
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+.projectLayer h4{
+    font-size: 2.5rem;
+    white-space: nowrap;
+}
+.projectLayer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    color: #14526b;
+    font-size: 20px;
+}
+
+/* Media*/
+
+@media screen and (max-width: 1550px){
+    .projectLayer h4{
+        font-size: 2.2rem;
+    }
+    .projectLayer{
+        padding: 0 2rem;
+        text-align: center;
+    }
+}
+@media screen  and (max-width: 1400px){
+    .project{
+        flex-basis: 45%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .projectLayer h4{
+        font-size: 2rem;
+    }
+    .projectLayer{
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .projectLayer p{
+        font-size: 0.9rem;
+    }
+    .projectLayer a{
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 870px){
+   .project{
+       flex-basis: 80%;
+   }
+}
+@media screen and (max-width: 600px){
+    .project{
+        flex-basis: 100%;
+    }
+}

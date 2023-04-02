@@ -1,0 +1,44 @@
+.contact{
+    min-height: 100vh;
+}
+.contact h2{
+    font-size: 4.6rem;
+    text-align: center;
+}
+.contact h2 span{
+    color:var(--main-color)
+}
+.formBlock{
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.inputBlock{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.fullInput{
+    margin-top: 25px;
+}
+input{
+    width: 48%;
+    border:none;
+    background-color: #292F3B;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    color:var(--text-color);
+}
+textarea{
+
+    width: 100%;
+    min-height: 500px;
+    resize: none;
+    border:none;
+    background-color: #292F3B;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    color:var(--text-color);
+}
