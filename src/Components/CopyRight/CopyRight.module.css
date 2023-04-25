@@ -1,0 +1,16 @@
+.copyRight{
+    padding: 15px 0;
+    background-color: #08090b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.copyRight pre{
+    display: flex;
+    align-items: center;
+    font-family: Monospaced;
+}
+.copyRight p svg{
+    margin:0 5px;
+}

@@ -1,0 +1,42 @@
+section.contact{
+    background-color: #0f1215;
+}
+.contact h2{
+    font-size: 4.6rem;
+    text-align: center;
+}
+.contact h2 span{
+    color:var(--main-color)
+}
+.contactMe{
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+}
+.contacts span{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.contacts span svg{
+    font-size: 24px;
+    color: #00eeff;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 870px){
+    .contactMe{
+        flex-direction: column;
+    }
+    .contactMe div{
+        margin-bottom: 10px;
+    }
+    .contacts span{
+        margin: 10px 0;
+    }
+}

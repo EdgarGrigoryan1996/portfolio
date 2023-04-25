@@ -1,0 +1,114 @@
+.navbarWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9%;
+}
+.logo{
+    font-size: 2.4rem;
+    color:var(--text-color)
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.navbar a{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 50px;
+    transition: all 0.2s linear;
+}
+.logo span{
+    font-size: 2.6rem;
+    color: var(--main-color);
+
+
+}
+.navbar a.active,
+.navbar a:hover{
+    color: var(--main-color);
+    filter:drop-shadow(0 0 1rem var(--main-color));
+}
+.navbar span{
+    display: none;
+}
+.navbarWrapper .burger{
+    cursor: pointer;
+    display: none;
+}
+.navbarWrapper span svg{
+    font-size: 28px;
+}
+
+
+/* Media */
+@media screen and (max-width: 1220px){
+    .logo{
+        font-size: 2.2rem;
+    }
+    .navbar a{
+        font-size: 1.3rem;
+        margin-left: 35px;
+    }
+}
+@media screen and (max-width: 960px){
+    .logo{
+        font-size: 2rem;
+    }
+    .navbar a{
+        font-size: 1.1rem;
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 840px){
+    .navbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--main-color);
+        z-index: 9999;
+        box-shadow: 0 0 1rem var(--main-color);
+        overflow: hidden;
+    }
+    .mobileNavbar{
+        width: 300px;
+    }
+    .mobileNavbar a:hover{
+        color: #5e6978;
+    }
+    .navbarWrapper .burger{
+        display: inline-block;
+    }
+    .navbar a{
+        margin-top: 30px;
+        font-size: 1.2rem;
+    }
+    .navbar a.active{
+        color: var(--bg-color);
+    }
+    .navbar span{
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        cursor: pointer;
+    }
+    .navbar span svg{
+        font-weight: 900;
+        font-size: 28px;
+        color: var(--second-bg-color)
+    }
+}
+@media screen and (max-width: 576px){
+    .mobileNavbar{
+        width: 100%;
+    }
+
+}

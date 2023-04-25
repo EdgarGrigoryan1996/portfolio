@@ -1,0 +1,54 @@
+.themeButtonBox{
+    width: 80px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #134d64;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    margin-right: -50px;
+    margin-left: 50px;
+}
+.darkMode{
+    right: unset;
+    left: 0;
+}
+.lightMode{
+    left: unset;
+    right: 0;
+    background-color: #11959d;
+}
+.lightMode .sun svg{
+    color: #eef41d;
+}
+.currentWeather{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.currentWeather svg{
+    font-size: 22px;
+    color: white;
+}
+.currentWeather .moon svg{
+    font-size: 16px;
+}
+.buttonCircle{
+    transition: all 0.5s ease;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    left: 5px;
+}
+.circleDark{
+    left: 5px;
+}
+.circleLight{
+    left: 50%;
+}

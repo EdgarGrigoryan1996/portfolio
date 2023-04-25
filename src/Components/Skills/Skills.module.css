@@ -1,0 +1,75 @@
+.skills{
+    min-height: 100vh;
+}
+.skills h2{
+    text-align: center;
+    font-size: 4.6rem;
+    visibility: hidden;
+}
+.skills .skillsTitleShow{
+    visibility: visible;
+}
+.skills h2 span{
+    color: var(--main-color);
+}
+.mySkills{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.skill{
+    padding: 25px;
+    background-color: #313743;
+    border-radius: 15px;
+    margin-top: 50px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    flex-grow: 0;
+    flex-basis: 31%;
+    visibility: hidden;
+    color:#fff;
+}
+.skillShow{
+    visibility: visible;
+}
+.skill:hover{
+    box-shadow: 0 0 2rem var(--main-color);
+    transform: scale(1.03);
+}
+.skillIcon{
+    text-align: center;
+}
+.skillIcon svg{
+    width: 75px;
+    height: 75px;
+    fill: var(--main-color);
+}
+.skill h3{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.levelBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.levelBlock span{
+    opacity: 0.7;
+}
+.levelBlock svg{
+    font-size: 25px;
+}
+.skillLevel{
+    display: flex;
+    margin-left: 5px;
+}
+.skillsDescription{
+    text-align: center;
+    padding-top: 50px;
+    opacity: 0.7;
+    visibility: hidden;
+}
+.skillsDescriptionShow{
+    visibility: visible;
+}
