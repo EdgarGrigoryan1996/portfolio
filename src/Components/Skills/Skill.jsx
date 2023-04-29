@@ -8,10 +8,10 @@ function Skill(props) {
     const stars = []
     for(let i = 0; i < 10; i++){
         if(i < props.skill.level){
-            stars.push(<AiFillStar color={"0ef"}/>);
+            stars.push(<AiFillStar color={"var(--skillStar-color)"}/>);
         }
         else {
-            stars.push(<AiFillStar color={"var(--bg-color)"}/>);
+            stars.push(<AiFillStar color={"var(--skillText-color)"}/>);
         }
     }
     const [scrollTop, setScrollTop] = useState(0);

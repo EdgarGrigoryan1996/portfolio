@@ -1,0 +1,14 @@
+.hobbies{
+    min-height: 100vh;
+}
+.hobbies h2{
+    font-size: 4.6rem;
+    text-align: center;
+    visibility: hidden;
+}
+.hobbies .hobbiesTitleShow{
+    visibility: visible;
+}
+.hobbies h2 span{
+    color:var(--main-color)
+}

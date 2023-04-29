@@ -69,7 +69,7 @@ function Portfolio(props) {
             className={s.portfolio}
             id="portfolio"
         >
-            <h2 ref={portfolioTitleRef}>Latest <span className={g.animatedText}>Project</span></h2>
+            <h2 ref={portfolioTitleRef}>Latest <span className={g.animatedText}>Projects</span></h2>
             <div className={s.projects}>
                 {projects.map((project,i) => {
                     return <Project project={project} showAnimation={showAnimations[i]} hideAnimation={hideAnimations[i]}/>

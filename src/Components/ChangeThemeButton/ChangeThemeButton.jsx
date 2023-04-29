@@ -10,12 +10,20 @@ function ChangeThemeButton(props) {
             document.documentElement.style.setProperty('--second-bg-color', '#323946');
             document.documentElement.style.setProperty('--text-color', '#333333');
             document.documentElement.style.setProperty('--main-color', '#0ef');
+            document.documentElement.style.setProperty('--skillBg-color', '#02b3c0');
+            document.documentElement.style.setProperty('--skillTitle-color', '#313743');
+            document.documentElement.style.setProperty('--skillText-color', '#fff');
+            document.documentElement.style.setProperty('--skillStar-color', '#313743');
             setCurrentTheme("light")
         } else {
             document.documentElement.style.setProperty('--bg-color', '#1f242d');
             document.documentElement.style.setProperty('--second-bg-color', '#323946');
             document.documentElement.style.setProperty('--text-color', '#ffffff');
             document.documentElement.style.setProperty('--main-color', '#0ef');
+            document.documentElement.style.setProperty('--skillBg-color', '#313743');
+            document.documentElement.style.setProperty('--skillTitle-color', '#0ef');
+            document.documentElement.style.setProperty('--skillText-color', '#fff');
+            document.documentElement.style.setProperty('--skillStar-color', '#0ef');
             setCurrentTheme("dark")
         }
     }
