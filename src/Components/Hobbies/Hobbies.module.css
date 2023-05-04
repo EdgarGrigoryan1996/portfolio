@@ -1,7 +1,7 @@
 .hobbies{
-    min-height: 100vh;
+    min-height: 90vh;
 }
-.hobbies h2{
+.hobbiesTitle{
     font-size: 4.6rem;
     text-align: center;
     visibility: hidden;
@@ -12,3 +12,84 @@
 .hobbies h2 span{
     color:var(--main-color)
 }
+.hobbiesContent{
+    display:flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.hobbiesContent h2{
+    font-size: 34px;
+    text-align: center;
+}
+.hobbieBlock{
+    padding: 25px 25px 50px 25px;
+    background-color: var(--skillBg-color);
+    border-radius: 15px;
+    margin-top: 50px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    flex-grow: 0;
+    flex-basis: 31%;
+    visibility: hidden;
+    color:#fff;
+}
+.hobbieBlock p{
+    position: relative;
+    color: #ddd;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.hobbieBlockShow{
+    visibility: visible;
+}
+.hobbieBlock:hover{
+    box-shadow: 0 0 2rem var(--skillTitle-color);
+}
+.hobbieImg{
+    padding-top: 25px;
+    text-align: center;
+
+}
+.hobbieBlock svg{
+    color: var(--skillTitle-color);
+    font-size: 120px;
+    margin-bottom: 20px;
+}
+@media screen  and (max-width: 1400px){
+    .hobbiesContent{
+        justify-content: center;
+    }
+    .hobbieBlock{
+        margin-left:15px;
+        margin-right:15px;
+        flex-basis: 45%;
+    }
+}
+@media screen  and (max-width: 1100px){
+    .hobbiesTitle{
+        font-size: 4.4rem;
+    }
+}
+@media screen  and (max-width: 600px){
+    .hobbiesTitle{
+        font-size: 3.8rem;
+    }
+}
+@media screen  and (max-width: 460px){
+
+    .hobbiesTitle{
+        font-size: 3.2rem;
+    }
+}
+@media screen  and (max-width: 870px){
+    .hobbiesContent{
+        justify-content: center;
+    }
+    .hobbieBlock{
+
+        flex-basis: 100%;
+    }
+}
+
+

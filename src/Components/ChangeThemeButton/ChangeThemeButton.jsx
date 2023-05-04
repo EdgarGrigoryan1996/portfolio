@@ -14,6 +14,8 @@ function ChangeThemeButton(props) {
             document.documentElement.style.setProperty('--skillTitle-color', '#313743');
             document.documentElement.style.setProperty('--skillText-color', '#fff');
             document.documentElement.style.setProperty('--skillStar-color', '#313743');
+            document.documentElement.style.setProperty('--bgAnimationStars', '#02b3c0');
+            document.documentElement.style.setProperty('--formPlaceholder-color', '#f4f4f4');
             setCurrentTheme("light")
         } else {
             document.documentElement.style.setProperty('--bg-color', '#1f242d');
@@ -24,6 +26,8 @@ function ChangeThemeButton(props) {
             document.documentElement.style.setProperty('--skillTitle-color', '#0ef');
             document.documentElement.style.setProperty('--skillText-color', '#fff');
             document.documentElement.style.setProperty('--skillStar-color', '#0ef');
+            document.documentElement.style.setProperty('--bgAnimationStars', '#c49952');
+            document.documentElement.style.setProperty('--formPlaceholder-color', '#5c636f');
             setCurrentTheme("dark")
         }
     }

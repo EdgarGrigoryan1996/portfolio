@@ -59,8 +59,6 @@ function Skills(props) {
             animateElementsToScroll(scrollTop,setScrollTop,skillsDescriptionRef,'animate__fadeInUp','animate__fadeOutDown',`${s.skillsDescriptionShow}`)
         }
         window.addEventListener('scroll',handleScroll)
-        console.log(scrollTop)
-        console.log(skillsTitleRef.current.offsetTop)
         return () => {
             window.removeEventListener('scroll',handleScroll)
         }

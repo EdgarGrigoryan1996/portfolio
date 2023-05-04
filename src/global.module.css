@@ -16,6 +16,8 @@
     --skillTitle-color:#0ef;
     --skillText-color:#fff;
     --skillStar-color:#0ef;
+    --bgAnimationStars:#c49952;
+    --formPlaceholder-color: #5c636f;
 }
 section{
     max-width: 100%;

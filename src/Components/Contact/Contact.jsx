@@ -18,7 +18,7 @@ function Contact(props) {
             className={s.contact}
             id="contact"
         >
-            <h2>Contact <span>Me!</span></h2>
+            <h2>Contact <span className={g.animatedText}>Me!</span></h2>
             <div className={s.formBlock}>
                 <form action="">
                     <div className={s.inputBlock}>

@@ -3,7 +3,11 @@
 }
 .social a{
     color: var(--main-color);
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
     border:2px solid var(--main-color);
     border-radius: 50%;
     margin-right: 20px;
@@ -14,4 +18,12 @@
     background-color: var(--main-color);
     color:var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
+}
+
+@media screen  and (max-width: 600px){
+  .social a{
+      width: 37px;
+      height: 37px;
+      font-size: 18px;
+  }
 }

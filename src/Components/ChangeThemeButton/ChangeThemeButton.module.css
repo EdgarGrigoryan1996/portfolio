@@ -52,3 +52,24 @@
 .circleLight{
     left: 50%;
 }
+
+/*Media*/
+@media screen and (max-width: 840px) {
+    .themeButtonBox{
+        margin: 30px auto;
+        width: 60px;
+        height: 30px;
+        transform: translate(10px,0);
+    }
+    .buttonCircle{
+        width: 25px;
+        height: 25px;
+    }
+    .currentWeather svg{
+        font-size: 18px;
+    }
+    .currentWeather .moon svg{
+        font-size: 12px;
+        margin-top: 2px;
+    }
+}

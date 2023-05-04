@@ -12,7 +12,6 @@ function ContactMe(props) {
             className={s.contact}
             id="contact"
         >
-            <h2>Contact <span className={g.animatedText}>Me!</span></h2>
             <div className={s.contactMe}>
                 <div className={s.contacts}>
                     <span><AiFillPhone /> + (374)55-43-93-11</span>

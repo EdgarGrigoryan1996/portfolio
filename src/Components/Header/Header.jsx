@@ -6,7 +6,7 @@ import Navbar from "./Navbar/Navbar";
 import Button from "../GlobalComponents/Button/Button";
 import Typed from "typed.js";
 import Social from "../GlobalComponents/Social/Social";
-import headerImg from "../../assets/images/headerImg.png"
+import headerImg from "../../assets/images/headerImg-min.webp"
 import {onButtonClick} from "../../Utils/Functions/downloadCV";
 
 function Header(props) {

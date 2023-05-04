@@ -24,7 +24,7 @@
 input{
     width: 48%;
     border:none;
-    background-color: #292F3B;
+    background-color: var(--skillBg-color);
     padding: 20px;
     border-radius: 8px;
     font-size: 18px;
@@ -36,9 +36,12 @@ textarea{
     min-height: 500px;
     resize: none;
     border:none;
-    background-color: #292F3B;
+    background-color: var(--skillBg-color);
     padding: 20px;
     border-radius: 8px;
     font-size: 18px;
     color:var(--text-color);
+}
+input::placeholder,textarea::placeholder{
+    color: var(--formPlaceholder-color);
 }

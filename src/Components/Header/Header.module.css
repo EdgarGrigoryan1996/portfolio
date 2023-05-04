@@ -46,7 +46,7 @@
     height: 600px;
     animation: imgAnimated infinite 20s;
     animation-timing-function: linear;
-    z-index: 9999;
+    z-index: 9998;
 }
 .imgBackground img{
     position: absolute;
@@ -106,8 +106,8 @@
         font-size: 1.2rem;
     }
     .imgBackground{
-        width: 390px;
-        height: 390px;
+        width: 470px;
+        height: 520px;
     }
 }
 @media screen  and (max-width: 1200px){
@@ -116,6 +116,10 @@
     }
     .contentAboutMe h3{
         font-size: 2.2rem;
+    }
+    .imgBackground{
+        width: 420px;
+        height: 470px;
     }
 }
 @media screen  and (max-width: 1150px){
@@ -132,6 +136,8 @@
 @media screen  and (max-width: 1100px){
     .headerContent{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 100%;
     }
     .contentText{
@@ -146,9 +152,45 @@
     .contentAboutMe p{
         font-size: 1.1rem;
     }
+    .imgBackground img{
+        left: 0;
+
+    }
+}
+@media screen  and (max-width: 600px){
+    .contentAboutMe h1{
+        font-size: 3.8rem;
+    }
+    .contentAboutMe h3{
+        font-size: 1.6rem;
+    }
+    .contentAboutMe p{
+        font-size: 1rem;
+        line-height: 17px;
+    }
     .imgBackground{
-        margin-top: 80px;
-        width: 425px;
-        height: 425px;
+        width: 320px;
+        height: 370px;
+    }
+}
+@media screen  and (max-width: 460px){
+    .contentAboutMe h1{
+        font-size: 3.2rem;
+    }
+    .contentAboutMe h3{
+        font-size: 1.4rem;
+    }
+    .contentAboutMe p{
+        font-size: 0.9rem;
+    }
+}
+@media screen  and (max-width: 385px){
+    .contentAboutMe h1{
+        font-size: 2.8rem;
+    }
+    .imgBackground{
+        margin-top: 15px;
+        width: 250px;
+        height: 300px;
     }
 }
