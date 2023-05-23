@@ -1,47 +1,116 @@
-.contact{
+.contact {
     min-height: 100vh;
 }
-.contact h2{
+
+.contact h2 {
     font-size: 4.6rem;
     text-align: center;
 }
-.contact h2 span{
-    color:var(--main-color)
+
+.contact h2 span {
+    color: var(--main-color)
 }
-.formBlock{
+
+.formBlock {
     width: 70%;
     margin: 0 auto;
     justify-content: center;
 }
-.inputBlock{
+
+.inputBlock {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
 }
-.fullInput{
+
+ span.oneInputBlock {
+    position: relative;
+    flex-basis: 48%;
+}
+
+
+.fullInput {
     margin-top: 25px;
 }
-input{
-    width: 48%;
-    border:none;
+.fullInput span.oneInputBlock{
+    position: relative;
+    flex-basis: 100%;
+    display: block;
+    min-height: 500px;
+}
+
+input {
+    width: 100%;
+    border: none;
     background-color: var(--skillBg-color);
+    opacity: 0.5;
     padding: 20px;
     border-radius: 8px;
     font-size: 18px;
-    color:var(--text-color);
+    color: var(--text-color);
 }
-textarea{
 
+textarea {
     width: 100%;
     min-height: 500px;
     resize: none;
-    border:none;
+    border: none;
     background-color: var(--skillBg-color);
+    opacity: 0.5;
     padding: 20px;
     border-radius: 8px;
     font-size: 18px;
-    color:var(--text-color);
+    color: var(--text-color);
 }
-input::placeholder,textarea::placeholder{
+
+input::placeholder, textarea::placeholder {
     color: var(--formPlaceholder-color);
+}
+
+.errorMessage {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Success Popup*/
+.popupWrapper div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: var(--skillBg-color);
+    border-radius: 10px;
+    z-index: 9999;
+    transition: all 0.2s linear;
+}
+
+.popupWrapper div.popupBlock {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 870px){
+    .inputBlock{
+        flex-direction: column;
+    }
+    span.oneInputBlock:first-child{
+        display: block;
+        flex-basis: 100%;
+        margin-bottom: 25px;
+    }
+    .fullInput span.oneInputBlock{
+        min-height: 350px;
+    }
+    textarea{
+        min-height: 350px;
+    }
+}
+@media screen and (max-width: 576px){
+    .contact h2 {
+        font-size: 3.6rem;
+    }
+    .formBlock{
+        width: 100%;
+        margin: 0;
+    }
 }

@@ -42,3 +42,8 @@ section.contact{
         margin: 10px 0;
     }
 }
+@media screen and (max-width: 576px){
+    .contact h2 {
+        font-size: 3.6rem;
+    }
+}
