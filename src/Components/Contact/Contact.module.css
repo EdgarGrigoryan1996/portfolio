@@ -72,6 +72,19 @@ input::placeholder, textarea::placeholder {
     right: 0;
     top: 0;
 }
+.errorMessage[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    width: 125px;
+    padding: 15px 10px;
+    border-radius: 8px;
+    top: -100%;
+    left: 50px;
+    background-color: #d53838;
+    z-index: 9999;
+    font-size: 18px;
+}
+
 
 /* Success Popup*/
 .popupWrapper div {
@@ -112,5 +125,12 @@ input::placeholder, textarea::placeholder {
     .formBlock{
         width: 100%;
         margin: 0;
+    }
+    .errorMessage[title]:hover::after {
+
+        top: 10px;
+        left: -125px;
+        font-size: 16px;
+
     }
 }

@@ -129,7 +129,7 @@ function Contact(props) {
                             onChange={(e) => changeInputState(name, setName, e)}
                         />
                             {!name.error.status &&
-                                <span className={s.errorMessage}>
+                                <span title={name.error.errMessage} className={s.errorMessage}>
                                     <UseAnimations animation={error} strokeColor={"#ea3434"} size={56}/>
                                 </span>}
                             </span>
@@ -142,7 +142,7 @@ function Contact(props) {
                             onChange={(e) => changeInputState(email, setEmail, e)}
                         />
                         {!email.error.status &&
-                            <span className={s.errorMessage}>
+                            <span title={email.error.errMessage} className={s.errorMessage}>
                                 <UseAnimations animation={error} strokeColor={"#ea3434"} size={56}/>
                             </span>}
                             </span>
@@ -174,7 +174,7 @@ function Contact(props) {
                         onChange={(e) => changeInputState(message, setMessage, e)}
                     ></textarea>
                         {!message.error.status &&
-                            <span className={s.errorMessage}>
+                            <span title={message.error.errMessage} className={s.errorMessage}>
                                 <UseAnimations animation={error} strokeColor={"#ea3434"} size={56}/>
                             </span>}
                         </span>

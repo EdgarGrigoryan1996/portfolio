@@ -6,7 +6,7 @@ function SuccessMessagePopup(props) {
     return (
         <div className={s.popupWrapper}>
             <div className={s.popupBlock}>
-                <UseAnimations animation={checkmark} speed={5}  size={256} strokeColor={"var(--skillTitle-color)"}/>
+                <UseAnimations animation={checkmark} speed={0.5}  size={256} strokeColor={"var(--skillTitle-color)"}/>
             </div>
         </div>
     );
