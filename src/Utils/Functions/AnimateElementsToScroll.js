@@ -1,7 +1,7 @@
 
 function animateElementsToScroll(scrollTop,setScrollTop,elementRef,showAnimation,hideAnimation,hideVisibility){
     setScrollTop(window.scrollY);
-    if(scrollTop > elementRef.current.offsetTop - 500){
+    if(scrollTop > elementRef.current.offsetTop - 770){
         elementRef.current.classList.remove(hideAnimation);
         elementRef.current.classList.add('animate__animated',showAnimation,hideVisibility);
     } else {

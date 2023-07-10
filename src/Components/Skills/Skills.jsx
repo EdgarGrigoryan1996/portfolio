@@ -7,12 +7,12 @@ import {DiCss3} from "react-icons/di";
 import {IoLogoJavascript} from "react-icons/io";
 import {FaReact} from "react-icons/fa";
 import {BsGit} from "react-icons/bs";
-import {SiRedux} from "react-icons/si";
+import {SiFirebase, SiNextdotjs, SiRedux} from "react-icons/si";
 import animateElementsToScroll from "../../Utils/Functions/AnimateElementsToScroll";
 
-function Skills(props) {
-    const showAnimations = ['animate__lightSpeedInLeft',"animate__zoomIn","animate__lightSpeedInRight","animate__lightSpeedInLeft","animate__zoomIn","animate__lightSpeedInRight"]
-    const hideAnimations = ['animate__lightSpeedOutLeft',"animate__zoomOut","animate__lightSpeedOutRight","animate__lightSpeedOutLeft","animate__zoomOut","animate__lightSpeedOutRight"]
+function Skills() {
+    const showAnimations = ['animate__lightSpeedInLeft',"animate__zoomIn","animate__lightSpeedInRight","animate__lightSpeedInLeft","animate__zoomIn","animate__lightSpeedInRight","animate__zoomIn","animate__zoomIn"]
+    const hideAnimations = ['animate__lightSpeedOutLeft',"animate__zoomOut","animate__lightSpeedOutRight","animate__lightSpeedOutLeft","animate__zoomOut","animate__lightSpeedOutRight","animate__zoomOut","animate__zoomOut"]
     const skills = [
         {
             logo:<AiFillHtml5/>,
@@ -42,6 +42,16 @@ function Skills(props) {
         {
             logo:<BsGit/>,
             title:"Git",
+            level:6
+        },
+        {
+            logo:<SiNextdotjs/>,
+            title:"Next JS",
+            level:7
+        },
+        {
+            logo:<SiFirebase/>,
+            title:"Firebase",
             level:6
         },
 

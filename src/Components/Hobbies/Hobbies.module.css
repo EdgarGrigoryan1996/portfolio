@@ -23,7 +23,7 @@
 }
 .hobbieBlock{
     padding: 25px 25px 50px 25px;
-    background-color: var(--skillBg-color);
+
     border-radius: 15px;
     margin-top: 50px;
     transition: 0.4s ease;
@@ -43,26 +43,11 @@
     width: 5px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: var(--skillTitle-color);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--skillTitle-color);
-}
 .hobbieBlockShow{
     visibility: visible;
 }
-.hobbieBlock:hover{
-    box-shadow: 0 0 2rem var(--skillTitle-color);
-}
+
 .hobbieImg{
     padding-top: 25px;
     text-align: center;

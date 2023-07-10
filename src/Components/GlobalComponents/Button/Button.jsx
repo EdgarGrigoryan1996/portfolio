@@ -12,7 +12,7 @@ function Button(props) {
         boxShadow: hover ? "none" : ("0 0 1rem " + props.color),
         fontWeight:"700",
         color:"#484848",
-        fontSize:"16px"
+        fontSize:"16px",
     }
     return (
         <button

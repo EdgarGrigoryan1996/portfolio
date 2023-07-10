@@ -25,10 +25,10 @@ function Project(props) {
             <div className={s.background}>
                 <div className={s.projectLayer}>
                     <h4>{props.project.projectTitle}</h4>
-                    <p>
-                        {props.project.projectDescription}
-                    </p>
-                    <a href={props.project.projectLink} target="_blank"><FiExternalLink/></a>
+                    {/*<p>*/}
+                    {/*    {props.project.projectDescription}*/}
+                    {/*</p>*/}
+                    <a href={props.project.projectLink} target="_blank" rel="noreferrer"><FiExternalLink/></a>
                 </div>
             </div>
         </div>

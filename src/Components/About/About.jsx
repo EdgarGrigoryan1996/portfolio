@@ -5,7 +5,8 @@ import g from "../../global.module.css";
 import Button from "../GlobalComponents/Button/Button";
 import aboutImg from "../../assets/images/aboutImg-min.webp"
 import animateElementsToScroll from "../../Utils/Functions/AnimateElementsToScroll";
-function About(props) {
+
+function About() {
     const [scrollTop, setScrollTop] = useState(0);
     const [readMore, setReadMore] = useState(false)
     const imgBackgroundRef = useRef(null);

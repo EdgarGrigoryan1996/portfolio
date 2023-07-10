@@ -15,7 +15,7 @@ function ContactMe(props) {
             <div className={s.contactMe}>
                 <div className={s.contacts}>
                     <span><AiFillPhone /> + (374)55-43-93-11</span>
-                    <span><AiOutlineMail/> grigoryan.ed.1996@gmail.com</span>
+                    <span><AiOutlineMail/> edgar@grigoryan.one</span>
                 </div>
                 <div>
                     <Social />

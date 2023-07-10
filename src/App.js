@@ -16,7 +16,7 @@ function App() {
         <About />
         <Skills />
         <Portfolio />
-        <Hobbies />
+        {/*<Hobbies />*/}
         <Contact />
         <ContactMe />
         <CopyRight />

@@ -4,9 +4,11 @@ import g from "../../global.module.css";
 import project1 from "./ProjectImages/football.jpg";
 import project2 from "./ProjectImages/project2.png";
 import project3 from "./ProjectImages/project3.jpg";
+import teverImg from "./ProjectImages/tever.webp";
+// import sevanImg from "./ProjectImages/sevan.webp";
 import Project from "./Project/Project";
 import animateElementsToScroll from "../../Utils/Functions/AnimateElementsToScroll";
-function Portfolio(props) {
+function Portfolio() {
 
     const projects = [
         {
@@ -28,23 +30,23 @@ function Portfolio(props) {
             projectLink:"https://focus-omega-five.vercel.app/",
         },
         {
-            projectTitle:"Hydra - Project",
+            projectTitle:"Tever - Group",
             projectDescription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum enim facere in minus rem. Ab, dolorem eum facere id impedit odit perferendis similique, sint tempora totam velit veritatis vero.",
-            projectImg:project2,
-            projectLink:"https://hydra-psi.vercel.app/",
+            projectImg:teverImg,
+            projectLink:"https://tevergroup.am/",
         },
-        {
-            projectTitle:"Focus",
-            projectDescription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum enim facere in minus rem. Ab, dolorem eum facere id impedit odit perferendis similique, sint tempora totam velit veritatis vero.",
-            projectImg:project3,
-            projectLink:"https://focus-omega-five.vercel.app/",
-        },
-        {
-            projectTitle:"Generate Teams",
-            projectDescription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum enim facere in minus rem. Ab, dolorem eum facere id impedit odit perferendis similique, sint tempora totam velit veritatis vero.",
-            projectImg:project1,
-            projectLink:"https://generate-teams.vercel.app/",
-        },
+        // {
+        //     projectTitle:"Sevan Startup Summit",
+        //     projectDescription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum enim facere in minus rem. Ab, dolorem eum facere id impedit odit perferendis similique, sint tempora totam velit veritatis vero.",
+        //     projectImg:sevanImg,
+        //     projectLink:"https://www.seasidestartupsummit.com/upcoming-events/sevan-startup-summit-2023",
+        // },
+        // {
+        //     projectTitle:"Generate Teams",
+        //     projectDescription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum enim facere in minus rem. Ab, dolorem eum facere id impedit odit perferendis similique, sint tempora totam velit veritatis vero.",
+        //     projectImg:project1,
+        //     projectLink:"https://generate-teams.vercel.app/",
+        // },
     ]
 
     const showAnimations = ['animate__lightSpeedInLeft',"animate__zoomIn","animate__lightSpeedInRight","animate__lightSpeedInLeft","animate__zoomIn","animate__lightSpeedInRight"]
