@@ -9,9 +9,9 @@ import Social from "../GlobalComponents/Social/Social";
 import headerImg from "../../assets/images/headerImg-min.webp"
 import {onButtonClick} from "../../Utils/Functions/downloadCV";
 
-function Header(props) {
-    const el = useRef(null)
+function Header() {
 
+    const el = useRef(null)
 
     useEffect(() => {
         const typed = new Typed(el.current, {

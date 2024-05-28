@@ -14,6 +14,7 @@ function Button(props) {
         color:"#484848",
         fontSize:"16px",
     }
+
     return (
         <button
             style={style}

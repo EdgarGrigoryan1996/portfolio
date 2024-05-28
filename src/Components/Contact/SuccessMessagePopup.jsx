@@ -2,7 +2,9 @@ import React from 'react';
 import s from "./Contact.module.css"
 import UseAnimations from "react-useanimations";
 import checkmark from 'react-useanimations/lib/checkmark'
-function SuccessMessagePopup(props) {
+
+function SuccessMessagePopup() {
+
     return (
         <div className={s.popupWrapper}>
             <div className={s.popupBlock}>

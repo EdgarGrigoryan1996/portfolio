@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import s from "./ChangeThemeButton.module.css"
-import {BsFillMoonStarsFill, BsFillSunFill, BsMoonStarsFill, BsSun} from "react-icons/bs";
-function ChangeThemeButton(props) {
+import {BsFillSunFill, BsMoonStarsFill} from "react-icons/bs";
+
+function ChangeThemeButton() {
     const [currentTheme, setCurrentTheme] = useState("dark")
 
     function changeTheme() {

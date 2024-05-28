@@ -5,7 +5,8 @@ import {AiOutlineClose} from "react-icons/ai";
 import {RxHamburgerMenu} from "react-icons/rx";
 import ChangeThemeButton from "../../ChangeThemeButton/ChangeThemeButton";
 
-function Navbar(props) {
+function Navbar() {
+
     const [mobileMenu, setMobileMenu] = useState(false);
     const [menuItems, setMenuItems] = useState([
         {
@@ -30,10 +31,11 @@ function Navbar(props) {
         },
         {
             title:'Contact',
-            href:'#contact',
+            href:'#skills',
             active:false
         },
     ])
+
     return (
         <div className={s.navbarWrapper}>
             <a href="#" className={s.logo}><span className={g.animatedText}>My</span> Portfolio.</a>

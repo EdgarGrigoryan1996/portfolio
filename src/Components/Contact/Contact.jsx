@@ -56,7 +56,7 @@ function Contact() {
                 subject:subject.text,
                 reply_to: "info@grigoryan.one",
                 to_name: "Portfolio Email",
-            }, "8WoG3eKkrbt0mr-cc");
+            }, "e7QxwGlZgQjPVJC9Q");
             setName({
                 ...name, text: "",
                 error: {

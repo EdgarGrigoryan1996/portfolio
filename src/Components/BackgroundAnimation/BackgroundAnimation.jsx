@@ -1,6 +1,8 @@
 import React from 'react';
 import "./starsAnimation.css"
-function BackgroundAnimation(props) {
+
+function BackgroundAnimation() {
+
     return (
         <div className="bg-animation">
             <div id="stars"></div>
