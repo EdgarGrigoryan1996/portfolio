@@ -27,6 +27,8 @@
     overflow: hidden;
     display: flex;
     visibility: hidden;
+    height: 300px;
+    padding: 50px 5%;
     flex-grow: 0;
     flex-basis: 31%;
 }
@@ -45,12 +47,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(255,255,255,0.9);
 }
 .project img{
-    width: 100%;
-    height: 300px;
+    max-width: 100%;
+    max-height: 300px;
     transition: .5s ease;
+    z-index: 7;
+    margin: 0 auto;
 }
 .projectLayer{
     position: absolute;
@@ -62,11 +66,12 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(rgba(0,0,0,.1), #134d64);
+    background: linear-gradient(rgba(0,0,0,.2), #0a2e3c);
     padding: 0 4rem;
     transform: translateY(100%);
     transition: 0.5s ease;
     color: white;
+    z-index: 9;
 }
 .projectLayer h4{
     font-size: 2.5rem;

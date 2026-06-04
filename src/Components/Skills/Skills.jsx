@@ -5,7 +5,7 @@ import {AiFillHtml5} from "react-icons/ai";
 import Skill from "./Skill";
 import {DiCss3} from "react-icons/di";
 import {IoLogoJavascript} from "react-icons/io";
-import {FaReact} from "react-icons/fa";
+import {FaReact, FaShopify} from "react-icons/fa";
 import {BsGit} from "react-icons/bs";
 import {SiFirebase, SiNextdotjs, SiRedux} from "react-icons/si";
 import animateElementsToScroll from "../../Utils/Functions/AnimateElementsToScroll";
@@ -47,6 +47,11 @@ function Skills() {
         {
             logo:<SiNextdotjs/>,
             title:"Next JS",
+            level:7
+        },
+        {
+            logo:<FaShopify />,
+            title:"Shopify",
             level:7
         },
         {

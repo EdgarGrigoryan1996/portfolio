@@ -1,10 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react';
 import s from "./Portfolio.module.css";
 import g from "../../global.module.css";
-import project1 from "./ProjectImages/football.jpg";
-import project2 from "./ProjectImages/project2.png";
-import project3 from "./ProjectImages/project3.jpg";
-import teverImg from "./ProjectImages/tever.webp";
+import project1 from "./ProjectImages/infallibleLogo.png";
+import project2 from "./ProjectImages/uhi.webp";
+import project3 from "./ProjectImages/aldoro.svg";
+import teverImg from "./ProjectImages/teverLogo.webp";
 // import sevanImg from "./ProjectImages/sevan.webp";
 import Project from "./Project/Project";
 import animateElementsToScroll from "../../Utils/Functions/AnimateElementsToScroll";
@@ -12,22 +12,22 @@ function Portfolio() {
 
     const projects = [
         {
-            projectTitle:"Generate Teams",
+            projectTitle:"Infallible ACC - Group",
             projectDescription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum enim facere in minus rem. Ab, dolorem eum facere id impedit odit perferendis similique, sint tempora totam velit veritatis vero.",
             projectImg:project1,
-            projectLink:"https://generate-teams.vercel.app/",
+            projectLink:"https://infallibleaccgroup.com/",
         },
         {
-            projectTitle:"Hydra - Project",
+            projectTitle:"UHI - Jewelry",
             projectDescription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum enim facere in minus rem. Ab, dolorem eum facere id impedit odit perferendis similique, sint tempora totam velit veritatis vero.",
             projectImg:project2,
-            projectLink:"https://hydra-psi.vercel.app/",
+            projectLink:"https://uhijewelry.com/",
         },
         {
-            projectTitle:"Focus",
+            projectTitle:"Aldoro - Jewelry",
             projectDescription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum enim facere in minus rem. Ab, dolorem eum facere id impedit odit perferendis similique, sint tempora totam velit veritatis vero.",
             projectImg:project3,
-            projectLink:"https://focus-omega-five.vercel.app/",
+            projectLink:"https://aldoro.am/",
         },
         {
             projectTitle:"Tever - Group",
